@@ -7,3 +7,4 @@ wp-config.php
 .htaccess
 core/*
 !core/.gitkeep
+html
