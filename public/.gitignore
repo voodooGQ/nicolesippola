@@ -1,0 +1,7 @@
+plugins/*
+!plugins/.gitkeep
+themes/nicolesippola/lib/vendor
+uploads/*
+!uploads/.gitkeep
+wp-config.php
+.htaccess
