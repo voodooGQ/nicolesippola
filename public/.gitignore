@@ -5,3 +5,4 @@ uploads/*
 !uploads/.gitkeep
 wp-config.php
 .htaccess
+core/*
