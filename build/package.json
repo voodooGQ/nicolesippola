@@ -10,5 +10,6 @@
     "gulp-clean-css": "^2.0.12",
     "gulp-rename": "^1.2.2",
     "yargs": "5.0.0"
-  }
+  },
+  "devDependencies": {}
 }

@@ -1,0 +1,9 @@
+{
+  "name": "nisi",
+  "version": "1.0",
+  "private": true,
+  "dependencies": {
+    "twig": "twig.js#0.7.1"
+  },
+  "devDependencies": {}
+}
