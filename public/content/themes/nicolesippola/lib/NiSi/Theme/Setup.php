@@ -89,6 +89,7 @@ class Setup
      */
     protected function filters()
     {
+        add_filter('image_resize_dimensions', array(new Image(), 'thumbnailUpscale'), 10, 6);
         return $this;
     }
 
