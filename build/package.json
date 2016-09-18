@@ -1,0 +1,9 @@
+{
+  "name": "nisi",
+  "version": "1.0.0",
+  "description": "nicolesippolamassage.com",
+  "private": true,
+  "dependencies": {
+    "gulp": "3.9.1"
+  }
+}
