@@ -1,15 +1,17 @@
 'use strict';
 
-var assetDir = '../public/content/themes/nicolesippola/assets/';
+var assetOut = '../public/content/themes/nicolesippola/assets/';
+var styles = './styles/';
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function () {
-    return gulp.src('./styles/**/*.scss')
+    return gulp.src(styles + '**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest(assetDir + 'styles'));
+        .pipe(gulp.dest(assetOut + 'styles'));
 });
 
 gulp.task('sass:watch', function () {
-    gulp.watch('./sass/**/*.scss', ['sass']);
+    gulp.watch(styles + '**/*.scss', ['sass']);
 });
