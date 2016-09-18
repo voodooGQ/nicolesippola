@@ -1,8 +1,8 @@
-plugins/*
-!plugins/.gitkeep
-themes/nicolesippola/lib/vendor
-uploads/*
-!uploads/.gitkeep
+content/plugins/*
+!content/plugins/.gitkeep
+content/themes/nicolesippola/lib/vendor
+content/uploads/*
+!content/uploads/.gitkeep
 wp-config.php
 .htaccess
 core/*

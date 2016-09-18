@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1d9fa74b18169f4afa5e3099b270e18",
+    "content-hash": "74b1ab2140fd3ba16749c1f368009760",
     "packages": [
         {
             "name": "johnpbloch/wordpress",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "539d9b0464fc161261216be3f2e4086387df276f"
+                "reference": "3e1124b65f5586d314a0fbb60d88acff9fb90267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/539d9b0464fc161261216be3f2e4086387df276f",
-                "reference": "539d9b0464fc161261216be3f2e4086387df276f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/3e1124b65f5586d314a0fbb60d88acff9fb90267",
+                "reference": "3e1124b65f5586d314a0fbb60d88acff9fb90267",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2016-09-16 05:46:47"
+            "time": "2016-09-17 22:01:50"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -378,6 +378,27 @@
             "time": "2016-08-13 20:53:52"
         },
         {
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/",
+            "time": "2016-09-11 23:18:18"
+        },
+        {
             "name": "wpackagist-plugin/ajax-thumbnail-rebuild",
             "version": "dev-trunk",
             "source": {
@@ -559,7 +580,8 @@
         "wpackagist-plugin/log-deprecated-notices": 20,
         "wpackagist-plugin/log-viewer": 20,
         "wpackagist-plugin/ajax-thumbnail-rebuild": 20,
-        "wpackagist-plugin/rewrite-rules-inspector": 20
+        "wpackagist-plugin/rewrite-rules-inspector": 20,
+        "wpackagist-plugin/advanced-custom-fields": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

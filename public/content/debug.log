@@ -1,0 +1,42 @@
+[18-Sep-2016 02:23:49 UTC] PHP Fatal error:  Uncaught Error: Class 'NiSi\Theme\Setup' not found in /var/www/content/themes/nicolesippola/functions.php:13
+Stack trace:
+#0 /var/www/core/wp-settings.php(392): include()
+#1 /var/www/wp-config.php(131): require_once('/var/www/core/w...')
+#2 /var/www/core/wp-load.php(44): require_once('/var/www/wp-con...')
+#3 /var/www/core/wp-blog-header.php(13): require_once('/var/www/core/w...')
+#4 /var/www/core/index.php(17): require('/var/www/core/w...')
+#5 {main}
+  thrown in /var/www/content/themes/nicolesippola/functions.php on line 13
+[18-Sep-2016 02:24:58 UTC] PHP Fatal error:  Uncaught Error: Class 'NiSi\Theme\Setup' not found in /var/www/content/themes/nicolesippola/functions.php:13
+Stack trace:
+#0 /var/www/core/wp-settings.php(392): include()
+#1 /var/www/wp-config.php(131): require_once('/var/www/core/w...')
+#2 /var/www/core/wp-load.php(44): require_once('/var/www/wp-con...')
+#3 /var/www/core/wp-blog-header.php(13): require_once('/var/www/core/w...')
+#4 /var/www/core/index.php(17): require('/var/www/core/w...')
+#5 {main}
+  thrown in /var/www/content/themes/nicolesippola/functions.php on line 13
+[18-Sep-2016 02:37:25 UTC] PHP Fatal error:  Uncaught Error: Class 'NiSi\Theme\Images' not found in /var/www/content/themes/nicolesippola/lib/NiSi/Theme/Setup.php:92
+Stack trace:
+#0 /var/www/content/themes/nicolesippola/lib/NiSi/Theme/Setup.php(38): NiSi\Theme\Setup->filters()
+#1 /var/www/content/themes/nicolesippola/lib/NiSi/Theme/Setup.php(65): NiSi\Theme\Setup->__construct()
+#2 /var/www/content/themes/nicolesippola/functions.php(13): NiSi\Theme\Setup::getInstance()
+#3 /var/www/core/wp-settings.php(392): include('/var/www/conten...')
+#4 /var/www/wp-config.php(131): require_once('/var/www/core/w...')
+#5 /var/www/core/wp-load.php(44): require_once('/var/www/wp-con...')
+#6 /var/www/core/wp-blog-header.php(13): require_once('/var/www/core/w...')
+#7 /var/www/core/index.php(17): require('/var/www/core/w...')
+#8 {main}
+  thrown in /var/www/content/themes/nicolesippola/lib/NiSi/Theme/Setup.php on line 92
+[18-Sep-2016 02:37:39 UTC] PHP Fatal error:  Uncaught Error: Class 'NiSi\Theme\Image' not found in /var/www/content/themes/nicolesippola/lib/NiSi/Theme/Setup.php:92
+Stack trace:
+#0 /var/www/content/themes/nicolesippola/lib/NiSi/Theme/Setup.php(38): NiSi\Theme\Setup->filters()
+#1 /var/www/content/themes/nicolesippola/lib/NiSi/Theme/Setup.php(65): NiSi\Theme\Setup->__construct()
+#2 /var/www/content/themes/nicolesippola/functions.php(13): NiSi\Theme\Setup::getInstance()
+#3 /var/www/core/wp-settings.php(392): include('/var/www/conten...')
+#4 /var/www/wp-config.php(131): require_once('/var/www/core/w...')
+#5 /var/www/core/wp-load.php(44): require_once('/var/www/wp-con...')
+#6 /var/www/core/wp-blog-header.php(13): require_once('/var/www/core/w...')
+#7 /var/www/core/index.php(17): require('/var/www/core/w...')
+#8 {main}
+  thrown in /var/www/content/themes/nicolesippola/lib/NiSi/Theme/Setup.php on line 92
