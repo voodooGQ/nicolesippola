@@ -1,0 +1,37 @@
+// ----------------------------------------------------------------------------
+// Colors
+// ----------------------------------------------------------------------------
+
+$COLOR_TEXT: black;
+
+// ----------------------------------------------------------------------------
+// Site Globals
+// ----------------------------------------------------------------------------
+
+$FONT_FAMILY: 'effraregular', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$FONT_FAMILY_LIGHT: 'effralight', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$FONT_FAMILY_MEDIUM: 'efframedium', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+$FONT_SIZE: 18px;
+
+$FONT_WEIGHT_LIGHT: 300;
+$FONT_WEIGHT_REGULAR: 400;
+$FONT_WEIGHT_MEDIUM: 500;
+$FONT_WEIGHT_BOLD: 700;
+
+$LINE_HEIGHT: 1;
+
+$TRANSITION_DURATION_IN: 150ms;
+$TRANSITION_DURATION_OUT: 250ms;
+$TRANSITION_EASING: ease-in-out;
+
+
+// ----------------------------------------------------------------------
+// Viewport Widths
+// ----------------------------------------------------------------------
+
+$WIDTH_SM: 767px;
+$WIDTH_MD: 768px;
+$SITE_MAX_WIDTH: 1140px;
+
+$MOBILE_NAV_WIDTH: 240px;
