@@ -40,7 +40,8 @@
     "wpackagist-plugin/log-deprecated-notices": "@dev",
     "wpackagist-plugin/log-viewer": "@dev",
     "wpackagist-plugin/ajax-thumbnail-rebuild": "@dev",
-    "wpackagist-plugin/rewrite-rules-inspector": "@dev"
+    "wpackagist-plugin/rewrite-rules-inspector": "@dev",
+    "wpackagist-plugin/advanced-custom-fields": "@dev"
   },
   "extra": {
     "webroot-dir": "../",
