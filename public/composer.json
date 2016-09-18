@@ -29,7 +29,6 @@
   "require": {
     "php": ">=7.0.0",
     "johnpbloch/wordpress": "@dev",
-    "symfony/yaml": "@dev",
     "twig/twig": "@dev"
   },
   "require-dev": {

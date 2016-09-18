@@ -77,6 +77,7 @@ class Setup
     protected function actions()
     {
         add_action('after_setup_theme', array(&$this, 'init'));
+        add_action('wp_enqueue_scripts', array(&$this, 'enqueueStyles'), 99);
         return $this;
     }
 
@@ -133,5 +134,53 @@ class Setup
         );
 
         return $this;
+    }
+
+    /**
+     * Enqueue CSS Stylesheets
+     *
+     * @return $this
+     * @since 1.0.0
+     * @chainable
+     */
+    public function enqueueStyles()
+    {
+        $themeHandle = THEME_SETTINGS['handle'];
+        $themeVersion = THEME_SETTINGS['version'];
+        $stylesFolder = get_template_directory_uri() . '/assets/styles/';
+        $fileType = self::isProd() ? '.min.css' : '.css';
+
+        wp_register_style(
+            $themeHandle . '_screen',
+            $stylesFolder .  'screen' . $fileType,
+            array(),
+            $themeVersion,
+            'screen, projection'
+        );
+
+        wp_enqueue_style($themeHandle . '_screen');
+        return $this;
+    }
+
+    /**
+     * Are we running in the Development environment?
+     *
+     * @return bool
+     * @since 1.0
+     */
+    public function isDev()
+    {
+        return THEME_SETTINGS['env'] == 'dev';
+    }
+
+    /**
+     * Are we running in the Production environment?
+     *
+     * @return bool
+     * @since 1.0
+     */
+    public function isProd()
+    {
+        return THEME_SETTINGS['env'] == 'prod';
     }
 }
