@@ -11,14 +11,14 @@ class ComposerStaticInite4606ccc6ba59e1c060c45a0f1639690
     );
 
     public static $prefixLengthsPsr4 = array (
-        'V' => 
-        array (
-            'Venefit\\' => 8,
-        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Yaml\\' => 23,
+        ),
+        'N' => 
+        array (
+            'NiSi\\' => 5,
         ),
         'C' => 
         array (
@@ -27,10 +27,6 @@ class ComposerStaticInite4606ccc6ba59e1c060c45a0f1639690
     );
 
     public static $prefixDirsPsr4 = array (
-        'Venefit\\' => 
-        array (
-            0 => __DIR__ . '/../../../../../..' . '/content/themes/nicolesippola/lib/NiSi',
-        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -38,6 +34,10 @@ class ComposerStaticInite4606ccc6ba59e1c060c45a0f1639690
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'NiSi\\' => 
+        array (
+            0 => __DIR__ . '/../../../../../..' . '/content/themes/nicolesippola/lib/NiSi',
         ),
         'Composer\\Installers\\' => 
         array (

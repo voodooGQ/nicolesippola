@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "539d9b0464fc161261216be3f2e4086387df276f"
+                "reference": "3e1124b65f5586d314a0fbb60d88acff9fb90267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/539d9b0464fc161261216be3f2e4086387df276f",
-                "reference": "539d9b0464fc161261216be3f2e4086387df276f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/3e1124b65f5586d314a0fbb60d88acff9fb90267",
+                "reference": "3e1124b65f5586d314a0fbb60d88acff9fb90267",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2016-09-16 05:46:47"
+            "time": "2016-09-17 22:01:50"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",

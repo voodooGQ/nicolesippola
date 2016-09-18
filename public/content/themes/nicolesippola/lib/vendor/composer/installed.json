@@ -159,46 +159,6 @@
         ]
     },
     {
-        "name": "johnpbloch/wordpress",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/johnpbloch/wordpress.git",
-            "reference": "539d9b0464fc161261216be3f2e4086387df276f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/539d9b0464fc161261216be3f2e4086387df276f",
-            "reference": "539d9b0464fc161261216be3f2e4086387df276f",
-            "shasum": ""
-        },
-        "require": {
-            "johnpbloch/wordpress-core-installer": "~0.2",
-            "php": ">=5.3.2"
-        },
-        "time": "2016-09-16 05:46:47",
-        "type": "wordpress-core",
-        "installation-source": "dist",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "WordPress Community",
-                "homepage": "http://wordpress.org/about/"
-            }
-        ],
-        "description": "WordPress is web software you can use to create a beautiful website or blog.",
-        "homepage": "http://wordpress.org/",
-        "keywords": [
-            "blog",
-            "cms",
-            "wordpress"
-        ]
-    },
-    {
         "name": "symfony/yaml",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -563,5 +523,45 @@
         "type": "wordpress-plugin",
         "installation-source": "dist",
         "homepage": "https://wordpress.org/plugins/rewrite-rules-inspector/"
+    },
+    {
+        "name": "johnpbloch/wordpress",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/johnpbloch/wordpress.git",
+            "reference": "3e1124b65f5586d314a0fbb60d88acff9fb90267"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/3e1124b65f5586d314a0fbb60d88acff9fb90267",
+            "reference": "3e1124b65f5586d314a0fbb60d88acff9fb90267",
+            "shasum": ""
+        },
+        "require": {
+            "johnpbloch/wordpress-core-installer": "~0.2",
+            "php": ">=5.3.2"
+        },
+        "time": "2016-09-17 22:01:50",
+        "type": "wordpress-core",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "WordPress Community",
+                "homepage": "http://wordpress.org/about/"
+            }
+        ],
+        "description": "WordPress is web software you can use to create a beautiful website or blog.",
+        "homepage": "http://wordpress.org/",
+        "keywords": [
+            "blog",
+            "cms",
+            "wordpress"
+        ]
     }
 ]

@@ -56,7 +56,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Venefit\\": "content/themes/nicolesippola/lib/NiSi/"
+      "NiSi\\": "content/themes/nicolesippola/lib/NiSi/"
     }
   }
 }

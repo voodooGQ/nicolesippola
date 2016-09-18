@@ -8,3 +8,6 @@
  */
 
 require_once(get_template_directory() . '/lib/vendor/autoload.php');
+
+// Primary Instantiation
+$setup = \NiSi\Theme\Setup::getInstance();

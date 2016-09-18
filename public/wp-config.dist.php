@@ -1,5 +1,19 @@
 <?php
 /**
+ * Theme Specific Settings
+ */
+$theme_settings = array(
+    'handle'        => 'ns', # The handle for the theme. Used to prefix meta entries and other various parameters
+    'version'       => '1.0', # The current theme version
+    'env'           => 'dev', # The current environment 'dev' | 'prod'
+    'twig'       => array(
+        'cache'         => '.cache/twig', # The Twig cache folder
+        'templates'     => 'twig' # The Twig Templalte Folder
+    )
+);
+define('THEME_SETTINGS', serialize($theme_settings));
+
+/**
  * Home & site URL.
  *
  * This will override the home/site URL settings

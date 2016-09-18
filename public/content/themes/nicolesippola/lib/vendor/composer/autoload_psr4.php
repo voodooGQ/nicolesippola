@@ -6,8 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname(dirname(dirname(dirname(dirname($vendorDir)))));
 
 return array(
-    'Venefit\\' => array($baseDir . '/content/themes/nicolesippola/lib/NiSi'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'NiSi\\' => array($baseDir . '/content/themes/nicolesippola/lib/NiSi'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
 );
