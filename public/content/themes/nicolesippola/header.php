@@ -27,4 +27,4 @@
     </head>
     <body>
         <?php get_template_part('partials/globals/site', 'header'); ?>
-        <div class="site-bd vr_x2">
+        <div class="site-bd container vr_x2">
