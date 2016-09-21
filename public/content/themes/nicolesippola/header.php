@@ -26,4 +26,5 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <?php get_template_part('partials/globals/page', 'header'); ?>
+        <?php get_template_part('partials/globals/site', 'header'); ?>
+        <div class="site-bd vr_x2">

@@ -5,8 +5,11 @@
  * @author Shane Smith <voodoogq@gmail.com>
  * @since 1.0
  */
-
-        get_template_part('partials/globals/page', 'footer');
-        wp_footer(); ?>
+?>
+        </div><!-- .site-bd -->
+        <?php
+            get_template_part('partials/globals/site', 'footer');
+            wp_footer();
+        ?>
     </body>
 </html>
