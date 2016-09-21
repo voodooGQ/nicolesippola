@@ -78,6 +78,7 @@ class Setup
     {
         add_action('after_setup_theme', array(&$this, 'init'));
         add_action('wp_enqueue_scripts', array(&$this, 'enqueueStyles'), 99);
+        add_action('wp_enqueue_scripts', array(&$this, 'enqueueScripts'));
         return $this;
     }
 
@@ -100,7 +101,7 @@ class Setup
      * @link  http://codex.wordpress.org/Function_Reference/add_theme_support
      *
      * @return $this
-     * @since 1.0.0
+     * @since 1.0
      * @chainable
      */
     protected function registerSupportFeatures()
@@ -140,7 +141,7 @@ class Setup
      * Enqueue CSS Stylesheets
      *
      * @return $this
-     * @since 1.0.0
+     * @since 1.0
      * @chainable
      */
     public function enqueueStyles()
@@ -159,6 +160,42 @@ class Setup
         );
 
         wp_enqueue_style($themeHandle . '_screen');
+        return $this;
+    }
+
+    /**
+     * Enqueue JavaScript files
+     *
+     * @return $this
+     * @since 1.0
+     * @chainable
+     */
+    public function enqueueScripts()
+    {
+        $themeHandle = THEME_SETTINGS['handle'];
+        $themeVersion = THEME_SETTINGS['version'];
+        $scriptsFolder = get_template_directory_uri() . '/assets/scripts/';
+
+        wp_register_script(
+            $themeHandle . '_app',
+            $scriptsFolder . 'app.js',
+            array('jquery'),
+            $themeVersion,
+            true
+        );
+
+        // Localize data
+        wp_localize_script(
+            $themeHandle . '_app',
+            'cms_settings',
+            array(
+                'ajaxUrl'       => admin_url('admin-ajax.php'),
+                'themePath'     => get_template_directory_uri() . '/',
+                'themeVersion'  => $themeVersion
+            )
+        );
+
+        wp_enqueue_script($themeHandle . '_app');
         return $this;
     }
 
