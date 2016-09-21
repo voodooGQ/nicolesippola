@@ -8,6 +8,7 @@ Authored by [Shane Smith](https://github.com/voodooGQ)
 1. `cp public/.htaccess.dist public/.htaccess`
 1. `cd build`
 1. `npm install` - This may take a few minutes to process... go grab a coffee
+1. `bower install`
 1. `cd ../vagrant`
 1. `vagrant up` - This may take a few minutes to process... drink some of that coffee you grabbed earlier
 1. `vagrant ssh`
