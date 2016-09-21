@@ -5,4 +5,8 @@
  * @author Shane Smith <voodoogq@gmail.com>
  * @since 1.0
  */
-wp_footer();
+
+        get_template_part('partials/globals/page', 'footer');
+        wp_footer(); ?>
+    </body>
+</html>
