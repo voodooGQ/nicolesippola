@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "74b1ab2140fd3ba16749c1f368009760",
+    "content-hash": "2c461ae6489490500d1041861b53cba3",
     "packages": [
         {
             "name": "johnpbloch/wordpress",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "3e1124b65f5586d314a0fbb60d88acff9fb90267"
+                "reference": "d1342680fa89ea37d5f3d2f7cd6ae826ce36c96e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/3e1124b65f5586d314a0fbb60d88acff9fb90267",
-                "reference": "3e1124b65f5586d314a0fbb60d88acff9fb90267",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/d1342680fa89ea37d5f3d2f7cd6ae826ce36c96e",
+                "reference": "d1342680fa89ea37d5f3d2f7cd6ae826ce36c96e",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2016-09-17 22:01:50"
+            "time": "2016-09-18 14:31:44"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -150,61 +150,6 @@
                 "shim"
             ],
             "time": "2016-08-30 17:06:17"
-        },
-        {
-            "name": "symfony/yaml",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "46b44cb89d05e691f2719d468fd476d57487b487"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/46b44cb89d05e691f2719d468fd476d57487b487",
-                "reference": "46b44cb89d05e691f2719d468fd476d57487b487",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.9"
-            },
-            "require-dev": {
-                "symfony/console": "~2.8|~3.0"
-            },
-            "suggest": {
-                "symfony/console": "For validating YAML files using the lint command"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Yaml Component",
-            "homepage": "https://symfony.com",
-            "time": "2016-09-14 23:17:14"
         },
         {
             "name": "twig/twig",
@@ -571,7 +516,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "johnpbloch/wordpress": 20,
-        "symfony/yaml": 20,
         "twig/twig": 20,
         "wpackagist-plugin/debug-bar": 20,
         "wpackagist-plugin/debug-bar-console": 20,
