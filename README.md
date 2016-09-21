@@ -9,6 +9,7 @@ Authored by [Shane Smith](https://github.com/voodooGQ)
 1. `cd build`
 1. `npm install` - This may take a few minutes to process... go grab a coffee
 1. `bower install`
+1. `gulp` - This will setup a watch task for the scripts and styles. You can CTRL-C out of this after it processes if you're not making changes. Otherwise open a new tab for the rest of the commands.
 1. `cd ../vagrant`
 1. `vagrant up` - This may take a few minutes to process... drink some of that coffee you grabbed earlier
 1. `vagrant ssh`
