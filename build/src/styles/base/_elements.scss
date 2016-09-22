@@ -10,6 +10,10 @@ body {
   font: normal 400 $FONT_SIZE/$LINE_HEIGHT $FONT_FAMILY;
   color: $COLOR_TEXT;
   background-color: $COLOR_OFF_WHITE;
+  background-image: url('../media/images/sunburst-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
   -webkit-font-smoothing: antialiased;
 }
 
