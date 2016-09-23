@@ -1,12 +1,14 @@
-<header class="site-header vr_x2">
-    <div class="container">
-        <?php
-            wp_nav_menu(
-                array(
-                    'menu' => 'primary',
-                    'menu_class' => 'menu-primary'
-                )
-            );
-        ?>
-    </div>
-</header>
+<?php
+/**
+ * Site Header Partial
+ *
+ * @author Shane Smith <voodoogq@gmail.com>
+ * @since 1.0
+ */
+
+use NiSi\Landmark\Controller\Header;
+use NiSi\Vendor\Twig\Template;
+
+$controller = new Header();
+$template = new Template($controller);
+$template->render();

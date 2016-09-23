@@ -8,3 +8,4 @@ wp-config.php
 core/*
 !core/.gitkeep
 html
+content/debug.log

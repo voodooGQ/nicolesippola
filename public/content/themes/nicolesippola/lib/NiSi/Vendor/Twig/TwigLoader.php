@@ -91,7 +91,7 @@ class TwigLoader
      */
     private function cacheFolderCheck()
     {
-        $themePath      = get_template_directory_uri();
+        $themePath      = get_template_directory() . '/';
         $twigCache      = THEME_SETTINGS['twig']['cache'];
 
         if (!file_exists($themePath . $twigCache)) {
@@ -125,7 +125,7 @@ class TwigLoader
      */
     private function twigInit()
     {
-        $themePath      = get_template_directory_uri();
+        $themePath      = get_template_directory() . '/';
         $twigCache      = THEME_SETTINGS['twig']['cache'];
         $twigTemplate   = THEME_SETTINGS['twig']['template'];
 
