@@ -1,5 +1,7 @@
 <header class="site-header vr_x2">
     <div class="container">
-        {{ menu }}
+        {% if menu.template == 'primary' %}
+            {% include 'menu/primary.twig' %}
+        {% endif %}
     </div>
 </header>

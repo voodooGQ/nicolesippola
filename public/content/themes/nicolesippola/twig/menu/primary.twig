@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Twig Template for the Primary Menu
+ *
+ * @author Shane Smith <ssmith@nerdery.com>
+ * @since 1.0
+ */
+#}
+
+<ul class="primaryNav-list">
+    {% for item in menu.items %}
+        <li class="primaryNav-list-item {{ item.classes|raw }}{{ item.is_active ? ' isActive' : '' }}">
+            <a href="{{ item.url }}">{{ item.title|raw }}</a>
+        </li>
+    {% endfor %}
+</ul>

@@ -9,6 +9,7 @@
 namespace NiSi\Landmark\Controller;
 
 use NiSi\Vendor\Twig\TwigInterface;
+use NiSi\Landmark\Meta\Header as Meta;
 
 /**
  * Class Header
@@ -51,12 +52,8 @@ class Header implements TwigInterface
         $twigData = array();
 
         if ($post) {
-            $twigData['menu'] = wp_nav_menu(
-                array(
-                    'menu' => 'primary',
-                    'menu_class' => 'menu-primary'
-                )
-            );
+            $meta = new Meta($post->ID);
+            $twigData['menu'] = $meta->getMenu();
         }
         return $twigData;
     }

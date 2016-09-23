@@ -1,24 +1,26 @@
-.site-header {
-  width: 100%;
-  border-top: 1px solid $COLOR_TEXT;
-  border-bottom: 1px solid $COLOR_TEXT;
-  margin-top: 25px;
-}
+@include breakpoint(LG) {
+  .site-header {
+    width: 100%;
+    border-top: 1px solid $COLOR_TEXT;
+    border-bottom: 1px solid $COLOR_TEXT;
+    margin-top: 25px;
+  }
 
-.menu-primary {
-  margin: 0 auto;
-  text-align: center;
+  .menu-primary {
+    margin: 0 auto;
+    text-align: center;
 
-  > li {
-    display: inline-block;
+    > li {
+      display: inline-block;
 
-    > a {
-      padding: 10px 25px;
-    }
+      > a {
+        padding: 10px 25px;
+      }
 
-    &:not(:last-child) {
-      &:after {
-        content: url('../media/images/menu-spacer.png');
+      &:not(:last-child) {
+        &:after {
+          content: url('../media/images/menu-spacer.png');
+        }
       }
     }
   }
