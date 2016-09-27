@@ -8,15 +8,17 @@
  */
 #}
 
-<ul class="menu-primary">
-    {% for item in menu.items %}
-        <li class="menu-primary-item {{ item.classes|raw }}{{ item.is_active ? ' isActive' : '' }}">
-            <a href="{{ item.url }}">{{ item.title|raw }}</a>
-        </li>
-    {% endfor %}
-</ul>
-<span class="hamburger u-noDesktop">
-    <span class="hamburger-line"></span>
-    <span class="hamburger-line"></span>
-    <span class="hamburger-line"></span>
-</span>
+<div class="menu-primary-container js-mobileMenu">
+    <ul class="menu-primary">
+        {% for item in menu.items %}
+            <li class="menu-primary-item {{ item.classes|raw }}{{ item.is_active ? ' isActive' : '' }}">
+                <a href="{{ item.url }}">{{ item.title|raw }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <span class="hamburger u-noDesktop js-mobileMenuTrigger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </span>
+</div>
