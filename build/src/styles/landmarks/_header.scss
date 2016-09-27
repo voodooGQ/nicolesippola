@@ -1,3 +1,41 @@
+.menu-primary {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background: $COLOR_BROWN;
+  padding-top: 10px;
+
+  > li {
+    > a {
+      padding: 10px 25px;
+      display: block;
+      color: $COLOR_OFF_WHITE;
+    }
+  }
+}
+
+.hamburger {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background: $COLOR_BROWN;
+  z-index: 50;
+  position: relative;
+  left: 300px;
+  padding-top: 5px;
+  cursor: pointer;
+
+  .hamburger-line {
+    display: block;
+    background: #fefcea;
+    height: 5px;
+    width: 65%;
+    margin: 6px 8px;
+    border-radius: 5px;
+  }
+}
+
 @include breakpoint(LG) {
   .site-header {
     width: 100%;
@@ -7,14 +45,19 @@
   }
 
   .menu-primary {
+    position: relative;
+    background: transparent;
+    width: auto;
     margin: 0 auto;
     text-align: center;
+    padding-top: 0;
 
     > li {
       display: inline-block;
 
       > a {
-        padding: 10px 25px;
+        display: inline;
+        color: $COLOR_TEXT;
       }
 
       &:not(:last-child) {
