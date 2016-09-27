@@ -8,9 +8,9 @@
  */
 #}
 
-<ul class="primaryNav-list">
+<ul class="menu-primary">
     {% for item in menu.items %}
-        <li class="primaryNav-list-item {{ item.classes|raw }}{{ item.is_active ? ' isActive' : '' }}">
+        <li class="menu-primary-item {{ item.classes|raw }}{{ item.is_active ? ' isActive' : '' }}">
             <a href="{{ item.url }}">{{ item.title|raw }}</a>
         </li>
     {% endfor %}
