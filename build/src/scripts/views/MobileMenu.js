@@ -148,10 +148,13 @@ proto.onClick = function($event) {
         ? CLOSED_PIXEL_VALUE
         : '0';
 
+    // Prevent click stacking
+    this.disable();
+
     this.$element.animate({
         'left' : pixelValue + 'px'
     }, this.animationSpeed, function() {
-        self.toggleOpenClass();
+        self.toggleOpenClass().enable();
     });
 
     return this;
@@ -176,7 +179,7 @@ proto.getToggleValue = function() {
  * @returns {proto}
  */
 proto.toggleOpenClass = function() {
-    if(this._getToggleValue === 'close') {
+    if(this.getToggleValue() === 'close') {
         this.$element.removeClass(IS_OPEN_SELECTOR);
     } else {
         this.$element.addClass(IS_OPEN_SELECTOR);
