@@ -8,7 +8,7 @@
  */
 namespace NiSi\Theme;
 
-use NiSi\Services\Register as ServiceRegister;
+use NiSi\Service\Register as ServiceRegister;
 
 /**
  * Theme Setup Class
@@ -50,7 +50,8 @@ class Setup
     {
         return $this->registerCustomPostTypes()
             ->registerSupportFeatures()
-            ->registerNavigationMenus();
+            ->registerNavigationMenus()
+            ->registerImageSizes();
     }
 
     /**
@@ -169,6 +170,26 @@ class Setup
             array(
                 'primary'       => __('Primary', $themeHandle),
             )
+        );
+
+        return $this;
+    }
+
+    /**
+     * Register custom image sizes with the theme
+     *
+     * @return $this
+     * @since 1.0.0
+     * @chainable
+     */
+    protected function registerImageSizes()
+    {
+        // Square
+        add_image_size(
+            'hero',
+            '1074',
+            '300',
+            false
         );
 
         return $this;

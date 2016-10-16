@@ -6,7 +6,7 @@
  * @since  1.0
  */
 
-namespace NiSi\Services;
+namespace NiSi\Service;
 
 use NiSi\Theme\PostParent;
 
@@ -14,7 +14,7 @@ use NiSi\Theme\PostParent;
  * The Service Post Type
  *
  * @class   Register
- * @package \NiSi\Services
+ * @package \NiSi\Service
  */
 class Register extends PostParent
 {
@@ -36,7 +36,7 @@ class Register extends PostParent
     public function __construct()
     {
         $this->singularName = 'Service';
-        $this->pluralName = 'Services';
+        $this->pluralName = 'Service';
         $this->menuIcon = 'dashicons-businessman';
         $this->supports = array('title', 'editor', 'thumbnail');
         parent::__construct();
