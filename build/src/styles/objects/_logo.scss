@@ -1,0 +1,23 @@
+.logo-container {
+  .logo {
+    background: url('../media/images/logo.png');
+    width: 285px;
+    height: 250px;
+  }
+
+  .logo-hd {
+    font-size: 30px;
+    font-family: $FONT_ACCENT;
+    font-weight: 800;
+
+    span {
+      font-weight: 300;
+      letter-spacing: 10px;
+    }
+  }
+
+  > * {
+    margin: 0 auto;
+    text-align: center;
+  }
+}

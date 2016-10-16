@@ -75,6 +75,9 @@
       > a {
         display: inline;
         color: $COLOR_TEXT;
+        &:hover {
+          color: $COLOR_BROWN;
+        }
       }
 
       &:not(:last-child) {

@@ -6,8 +6,6 @@
  * @since 1.0
  */
 
-get_header(); ?>
+get_header();
 
-    Hello World
-
-<?php get_footer();
+get_footer();
