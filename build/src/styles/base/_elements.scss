@@ -9,15 +9,15 @@ html {
 body {
   font: normal 400 $FONT_SIZE/$LINE_HEIGHT $FONT;
   color: $COLOR_TEXT;
-  background-color: $COLOR_OFF_WHITE;
+  //background-color: $COLOR_OFF_WHITE;
   -webkit-font-smoothing: antialiased;
-}
-
-body.home {
-  background-image: url('../media/images/sunburst-bg.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top center;
+  background: repeating-linear-gradient(
+                  to right,
+                  $COLOR_OFF_WHITE,
+                  $COLOR_OFF_WHITE 10px,
+                  $COLOR_STRIPE 10px,
+                  $COLOR_STRIPE 20px
+  );
 }
 
 body.isOpenNav,
