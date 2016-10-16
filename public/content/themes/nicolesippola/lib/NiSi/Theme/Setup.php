@@ -46,7 +46,8 @@ class Setup
      */
     public function init()
     {
-        return $this->registerSupportFeatures();
+        return $this->registerSupportFeatures()
+            ->registerNavigationMenus();
     }
 
     /**
@@ -136,6 +137,27 @@ class Setup
 
         return $this;
     }
+
+    /**
+     * Register all navigation menus with the theme
+     *
+     * @return $this
+     * @since 1.0
+     * @chainable
+     */
+    protected function registerNavigationMenus()
+    {
+        $themeHandle = THEME_SETTINGS['handle'];
+
+        register_nav_menus(
+            array(
+                'primary'       => __('Primary', $themeHandle),
+            )
+        );
+
+        return $this;
+    }
+
 
     /**
      * Enqueue CSS Stylesheets

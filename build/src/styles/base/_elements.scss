@@ -7,10 +7,17 @@ html {
 }
 
 body {
-  font: normal 400 $FONT_SIZE/$LINE_HEIGHT $FONT_FAMILY;
+  font: normal 400 $FONT_SIZE/$LINE_HEIGHT $FONT;
   color: $COLOR_TEXT;
-  background-color: #f7f7f7;
+  background-color: $COLOR_OFF_WHITE;
   -webkit-font-smoothing: antialiased;
+}
+
+body.home {
+  background-image: url('../media/images/sunburst-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
 }
 
 body.isOpenNav,

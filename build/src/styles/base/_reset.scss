@@ -25,6 +25,10 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   line-height: 1;
 }
@@ -105,4 +109,8 @@ textarea {
 ::-moz-focus-inner {
   border: 0;
   padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }

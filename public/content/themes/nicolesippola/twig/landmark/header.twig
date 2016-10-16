@@ -1,0 +1,17 @@
+{#
+/**
+ * @file
+ * Twig Template for the Site Header
+ *
+ * @author Shane Smith <ssmith@nerdery.com>
+ * @since 1.0
+ */
+#}
+
+<header class="site-header vr">
+    <div class="container">
+        {% if menu.template == 'primary' %}
+            {% include 'menu/primary.twig' %}
+        {% endif %}
+    </div>
+</header>
