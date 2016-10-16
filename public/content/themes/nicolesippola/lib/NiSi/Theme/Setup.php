@@ -189,7 +189,14 @@ class Setup
             'hero',
             '1074',
             '300',
-            false
+            true
+        );
+
+        add_image_size(
+            'hero_mobile',
+            '385',
+            '250',
+            true
         );
 
         return $this;
