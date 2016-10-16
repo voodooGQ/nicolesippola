@@ -8,6 +8,8 @@
  */
 namespace NiSi\Theme;
 
+use NiSi\Services\Register as ServiceRegister;
+
 /**
  * Theme Setup Class
  *
@@ -46,7 +48,8 @@ class Setup
      */
     public function init()
     {
-        return $this->registerSupportFeatures()
+        return $this->registerCustomPostTypes()
+            ->registerSupportFeatures()
             ->registerNavigationMenus();
     }
 
@@ -93,6 +96,19 @@ class Setup
     protected function filters()
     {
         add_filter('image_resize_dimensions', array(new Image(), 'thumbnailUpscale'), 10, 6);
+        return $this;
+    }
+
+    /**
+     * Register the Custom Post Types with WordPress
+     *
+     * @return $this
+     * @since 1.0.0
+     * @chainable
+     */
+    protected function registerCustomPostTypes()
+    {
+        ServiceRegister::getInstance();
         return $this;
     }
 
