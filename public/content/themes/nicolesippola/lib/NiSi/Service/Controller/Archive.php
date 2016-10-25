@@ -1,25 +1,24 @@
 <?php
 /**
- * Service Single Controller
+ * Service Archive Controller
  *
  * @author Shane Smith <voodoogq@gmail.com>
  * @since 1.0
  */
-
 namespace NiSi\Service\Controller;
 
 use NiSi\Vendor\Twig\TwigInterface;
-use NiSi\Service\Meta\Single as Meta;
+use NiSi\Service\Meta\Archive as Meta;
 use NiSi\Theme\Image as Image;
 
 /**
- * Class Single
+ * Class Archive
  *
  * @package NiSi\Service\Controller;
  * @author  Shane Smith <voodoogq@gmail.com>
  * @since   1.0
  */
-class Single implements TwigInterface
+class Archive implements TwigInterface
 {
     /**
      * The twig template name/location
@@ -28,7 +27,7 @@ class Single implements TwigInterface
      * @type string
      * @since 1.0
      */
-    const TWIG_TEMPLATE_NAME = 'service/single';
+    const TWIG_TEMPLATE_NAME = 'service/archive';
 
     /**
      * Returns the name of the Twig Template to use
@@ -64,11 +63,12 @@ class Single implements TwigInterface
         if($id) {
             $meta = new Meta($id);
             $imageMeta = Image::getImageMeta(get_post_thumbnail_id($post->ID));
+
+            $twigData['title']                      = $meta->getPostTitle();
             $twigData['featured_image_src']         = $imageMeta['urls']['hero'];
             $twigData['featured_image_src_mobile']  = $imageMeta['urls']['hero_mobile'];
-            $twigData['title']                      = $meta->getPostTitle();
-            $twigData['permalink']                  = $meta->getPermalink();
             $twigData['content']                    = $meta->getPostContent();
+            $twigData['services']                   = $meta->getPosts();
         }
 
         return $twigData;

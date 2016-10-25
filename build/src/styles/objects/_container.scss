@@ -5,6 +5,10 @@
 }
 
 .container-site {
+  top: -30px;
   min-height:100%;
   position:relative;
+  @include breakpoint(MD) {
+    top: 0;
+  }
 }

@@ -38,8 +38,11 @@ body.isTransitioning {
 }
 
 a {
-  color: inherit;
+  color: $COLOR_RED;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 a,

@@ -18,4 +18,4 @@ use NiSi\Theme\MetaParent;
  * @author  Shane Smith <ssmith@nerdery.com>
  * @since   1.0.1
  */
-class Single extends MetaParent{}
+class Single extends MetaParent {}
