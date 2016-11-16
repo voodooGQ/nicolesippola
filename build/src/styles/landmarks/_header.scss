@@ -1,5 +1,6 @@
 .menu-primary-container {
   font-family: $FONT_ACCENT;
+  text-transform: uppercase;
   position: absolute;
   height: 100%;
   overflow: visible;
@@ -16,7 +17,7 @@
   top: 0;
   height: 100%;
   width: 300px;
-  background: $COLOR_BROWN;
+  background: $COLOR_GREEN;
   padding-top: 10px;
 
   > li {
@@ -24,6 +25,9 @@
       padding: 10px 25px;
       display: block;
       color: $COLOR_OFF_WHITE;
+      &:hover {
+        color: $COLOR_ORANGE;
+      }
     }
   }
 }
@@ -32,12 +36,13 @@
   display: block;
   height: 50px;
   width: 50px;
-  background: $COLOR_BROWN;
+  background: $COLOR_GREEN;
   z-index: 50;
   position: relative;
   left: 300px;
   padding-top: 5px;
   cursor: pointer;
+  border-radius: 0 0 10px 0;
 
   .hamburger-line {
     display: block;
@@ -75,9 +80,6 @@
       > a {
         display: inline;
         color: $COLOR_TEXT;
-        &:hover {
-          color: $COLOR_BROWN;
-        }
       }
 
       &:not(:last-child) {

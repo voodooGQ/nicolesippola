@@ -9,7 +9,7 @@
 get_header(); ?>
 
     <div class="logo-container">
-        <div class="logo vr-half"></div>
+        <div class="logo vr_half"></div>
         <h1 class="logo-hd">Nicole Sippola <br /><span>Massage</span></h1>
     </div>
 

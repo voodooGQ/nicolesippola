@@ -3,3 +3,12 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.container-site {
+  top: -30px;
+  min-height:100%;
+  position:relative;
+  @include breakpoint(MD) {
+    top: 0;
+  }
+}

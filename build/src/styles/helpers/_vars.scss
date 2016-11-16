@@ -5,15 +5,17 @@
 $COLOR_TEXT: #261b07;
 
 $COLOR_OFF_WHITE: #fefcea;
+$COLOR_STRIPE: #fff6e8;
 $COLOR_GRAY: #bab8a5;
-$COLOR_BROWN: #503928;
+$COLOR_GREEN: #a5a563;
+$COLOR_ORANGE: #c06328;
 
 // ----------------------------------------------------------------------------
 // Site Globals
 // ----------------------------------------------------------------------------
 
-$FONT: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-$FONT_ACCENT: 'Fjalla One', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$FONT: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$FONT_ACCENT: 'Varela Round', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
 
 $FONT_SIZE: 18px;
@@ -36,6 +38,11 @@ $TRANSITION_EASING: ease-in-out;
 
 $WIDTH_SM: 767px;
 $WIDTH_MD: 768px;
-$SITE_MAX_WIDTH: 1074px;
+$SITE_MAX_WIDTH: 960px;
 
 $MOBILE_NAV_WIDTH: 240px;
+
+// ----------------------------------------------------------------------
+// Specific Elements
+// ----------------------------------------------------------------------
+$FOOTER_HEIGHT: 60px;

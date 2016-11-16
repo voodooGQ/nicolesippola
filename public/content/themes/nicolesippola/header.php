@@ -26,5 +26,6 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <?php get_template_part('partials/globals/site', 'header'); ?>
-        <div class="site-bd container vr_x2">
+        <div class="container-site">
+            <?php get_template_part('partials/globals/site', 'header'); ?>
+            <div class="site-bd container">
