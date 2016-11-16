@@ -9,8 +9,7 @@
 get_header(); ?>
 
     <div class="logo-container">
-        <div class="logo vr_half"></div>
-        <h1 class="logo-hd">Nicole Sippola <br /><span>Massage</span></h1>
+        <div class="logo"></div>
     </div>
 
 <?php get_footer();
