@@ -17,7 +17,7 @@
   top: 0;
   height: 100%;
   width: 300px;
-  background: $COLOR_BROWN;
+  background: $COLOR_GREEN;
   padding-top: 10px;
 
   > li {
@@ -26,7 +26,7 @@
       display: block;
       color: $COLOR_OFF_WHITE;
       &:hover {
-        color: $COLOR_RED;
+        color: $COLOR_ORANGE;
       }
     }
   }
@@ -36,7 +36,7 @@
   display: block;
   height: 50px;
   width: 50px;
-  background: $COLOR_BROWN;
+  background: $COLOR_GREEN;
   z-index: 50;
   position: relative;
   left: 300px;

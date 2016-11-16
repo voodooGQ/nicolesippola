@@ -63,9 +63,10 @@ class Single implements TwigInterface
 
         if($id) {
             $meta = new Meta($id);
-            $imageMeta = Image::getImageMeta(get_post_thumbnail_id($post->ID));
+            $imageMeta = Image::getImageMeta(get_post_thumbnail_id($id));
             $twigData['featured_image_src']         = $imageMeta['urls']['hero'];
             $twigData['featured_image_src_mobile']  = $imageMeta['urls']['hero_mobile'];
+            $twigData['featured_image_src_square']  = $imageMeta['urls']['square'];
             $twigData['title']                      = $meta->getPostTitle();
             $twigData['permalink']                  = $meta->getPermalink();
             $twigData['content']                    = $meta->getPostContent();

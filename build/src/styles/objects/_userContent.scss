@@ -15,7 +15,7 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: $FONT_ACCENT;
     font-size: inherit;
-    margin: 1em 0;
+    margin: 1em 0 0.5em 0;
   }
 
   h2 {
@@ -40,12 +40,12 @@
   ul, ol {
     margin: 0.5em 0;
     line-height: 1.45;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   a {
     &:hover {
-      color: $COLOR_BROWN;
+      color: $COLOR_GREEN;
       text-decoration: underline;
     }
   }
@@ -101,7 +101,7 @@
     bottom: -1px;
     left: -1px;
     width: 14px;
-    background-color: $COLOR_BROWN;
+    background-color: $COLOR_GREEN;
   }
 
   .wp-caption {

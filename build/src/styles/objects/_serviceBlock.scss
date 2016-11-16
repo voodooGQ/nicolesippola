@@ -1,0 +1,31 @@
+.serviceBlock {
+  img {
+    border-radius: 5px;
+    border: 1px solid $COLOR_GREEN;
+    width: 100%;
+    margin-bottom: -35px;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5s ease-in-out;
+    &:hover {
+      -webkit-filter: grayscale(0);
+    }
+  }
+
+  .serviceBlock-title {
+    display: block;
+    position: relative;
+    top: -130px;
+    padding: 10px;
+    width: 100%;
+    background: $COLOR_GREEN;
+    border-left: 1px solid $COLOR_GREEN;
+    border-right: 1px solid $COLOR_GREEN;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $COLOR_OFF_WHITE;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

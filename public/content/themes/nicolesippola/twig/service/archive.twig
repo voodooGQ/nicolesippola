@@ -6,16 +6,17 @@
 {% endif %}
 <div class="box">
     <h1 class="hdg hdg_1 mix-hdg_brown vr">{{ title|raw }}</h1>
-    <div class="userContent vr">
-        {{ content|raw }}
-    </div>
     <ul class="blocks blocks_3up">
         {% for service in services %}
-            <li>
+            <li class="serviceBlock">
                 <a href="{{ service.permalink }}">
-                    {{ service.title|raw }}
+                    <img src="{{ service.featured_image_src_square }}" />
                 </a>
+                <a class="serviceBlock-title" href="{{ service.permalink }}">{{ service.title|raw }}</a>
             </li>
         {% endfor %}
     </ul>
+    <div class="userContent vr">
+        {{ content|raw }}
+    </div>
 </div>

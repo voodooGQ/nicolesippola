@@ -199,6 +199,13 @@ class Setup
             true
         );
 
+        add_image_size(
+            'square',
+            '600',
+            '600',
+            true
+        );
+
         return $this;
     }
 

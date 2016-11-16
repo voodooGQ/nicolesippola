@@ -2,6 +2,7 @@
 @import 'helpers/_utils';
 @import 'helpers/_breakpoints';
 
+@import 'base/fonts';
 @import 'base/reset';
 @import 'base/elements';
 
@@ -16,6 +17,7 @@
 @import 'objects/hdg';
 @import 'objects/hero';
 @import 'objects/logo';
+@import 'objects/serviceBlock';
 @import 'objects/vr';
 @import 'objects/userContent';
 @import 'objects/utility';
