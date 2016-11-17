@@ -40,6 +40,7 @@ body.isTransitioning {
 a {
   color: $COLOR_ORANGE;
   text-decoration: none;
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
@@ -116,4 +117,8 @@ hr {
 
 .u-isVisuallyHidden {
   @include isVisuallyHidden();
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $COLOR_GREEN;
 }

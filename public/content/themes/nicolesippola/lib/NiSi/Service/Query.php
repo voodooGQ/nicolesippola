@@ -12,7 +12,7 @@ namespace NiSi\Service;
  * Class Query
  *
  * @package NiSi\Service\Meta
- * @author  Shane Smith <ssmith@nerdery.com>
+ * @author  Shane Smith <voodoogq@gmail.com>
  * @since   1.0
  */
 class Query {

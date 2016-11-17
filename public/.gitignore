@@ -1,5 +1,6 @@
 content/plugins/*
 !content/plugins/.gitkeep
+!content/plugins/advanced-custom-fields-pro
 content/themes/nicolesippola/lib/vendor
 content/uploads/*
 !content/uploads/.gitkeep

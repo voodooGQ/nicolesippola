@@ -1,11 +1,12 @@
 .menu-primary-container {
   font-family: $FONT_ACCENT;
   text-transform: uppercase;
-  position: absolute;
+  position: fixed;
   height: 100%;
   overflow: visible;
   top: 0;
   left: -300px;
+  z-index: 100;
 
   &.isOpen {
     left: 0;
@@ -27,6 +28,7 @@
       color: $COLOR_OFF_WHITE;
       &:hover {
         color: $COLOR_ORANGE;
+        text-decoration: none;
       }
     }
   }

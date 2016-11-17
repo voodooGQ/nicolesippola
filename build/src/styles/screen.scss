@@ -1,4 +1,5 @@
 @import 'helpers/_vars';
+
 @import 'helpers/_utils';
 @import 'helpers/_breakpoints';
 
@@ -16,8 +17,11 @@
 @import 'objects/grid';
 @import 'objects/hdg';
 @import 'objects/hero';
+@import 'objects/icon';
 @import 'objects/logo';
 @import 'objects/serviceBlock';
 @import 'objects/vr';
 @import 'objects/userContent';
 @import 'objects/utility';
+
+@import '../vendor/components-font-awesome/scss/font-awesome';

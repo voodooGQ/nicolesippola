@@ -2,7 +2,7 @@
 /**
  * Site Header Controller
  *
- * @author Shane Smith <ssmith@nerdery.com>
+ * @author Shane Smith <voodoogq@gmail.com>
  * @since 1.0
  */
 
@@ -15,7 +15,7 @@ use NiSi\Landmark\Meta\Header as Meta;
  * Class Header
  *
  * @package NiSi\Landmark\Controller
- * @author  Shane Smith <ssmith@nerdery.com>
+ * @author  Shane Smith <voodoogq@gmail.com>
  * @since   1.0
  */
 class Header implements TwigInterface

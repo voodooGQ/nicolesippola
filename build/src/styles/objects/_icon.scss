@@ -1,0 +1,39 @@
+.icon {
+  @extend .fa;
+  color: $COLOR_OFF_WHITE;
+  background: $COLOR_GREEN;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 25px !important;
+  -webkit-transition: background-color 500ms linear;
+  -moz-transition: background-color 500ms linear;
+  -o-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+  &:hover {
+    background: $COLOR_ORANGE;
+  }
+}
+
+.icon-facebook {
+  @extend .fa-facebook;
+  padding: 8px 10px 10px 12px;
+}
+
+.icon-twitter {
+  @extend .fa-twitter;
+  padding: 8px 10px 10px 10px;
+}
+
+.icon-instagram {
+  @extend .fa-instagram;
+  padding: 7px 10px 10px 9px;
+  font-size: 26px !important;
+}
+
+.icon-email {
+  @extend .fa-envelope;
+  padding: 8px 10px 10px 8px;
+  font-size: 23px !important;
+}

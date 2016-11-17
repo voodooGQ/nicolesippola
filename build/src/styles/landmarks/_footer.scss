@@ -1,12 +1,67 @@
 .site-footer {
+  font-family: $FONT_ACCENT;
   color: $COLOR_OFF_WHITE;
-  background: $COLOR_GREEN;
-  height: $FOOTER_HEIGHT;   /* Height of the footer */
+  background: $COLOR_ORANGE;
+  height: $DESKTOP_FOOTER_HEIGHT;
   width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+}
+
+.site-footer_top {
+  color: $COLOR_ORANGE;
+  background: $COLOR_OFF_WHITE;
+  border-top: 1px solid $COLOR_ORANGE;
+  min-height: 115px;
+  padding: 20px 10px;
   text-align: center;
+  @include breakpoint(MD) {
+    text-align: left;
+  }
+}
+
+.site-footer_bottom {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.menu-footer-container {
+  .menu-footer {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+
+    > li {
+      display: inline-block;
+      a {
+        color: $COLOR_OFF_WHITE;
+        padding: 0 15px;
+        display: inline;
+        text-decoration: none;
+        &:hover {
+          color: $COLOR_GREEN;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  margin-top: -20px;
+
+  > li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  @include breakpoint(MD) {
+    float: right;
+    margin-top: 15px;
+  }
 }

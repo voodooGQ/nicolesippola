@@ -1,0 +1,59 @@
+<footer class="site-footer">
+    <div class="site-footer_top">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-col grid-col_6of12">
+                    {{ address|raw }}
+                </div>
+                <div class="grid-col grid-col_6of12">
+                    <ul class="social">
+                        {% if social.facebook %}
+                            <li>
+                                <a href="{{ social.facebook|raw }}">
+                                    <i class="icon icon-facebook"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if social.twitter %}
+                            <li>
+                                <a href="{{ social.twitter|raw }}">
+                                    <i class="icon icon-twitter"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if social.instagram %}
+                            <li>
+                                <a href="{{ social.instagram|raw }}">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if social.email %}
+                            <li>
+                                <a href="{{ social.email|raw }}">
+                                    <i class="icon icon-email"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-footer_bottom">
+        <div class="container">
+            <div class="grid vr u-tabletPlus">
+                <div class="grid-col grid-col_12of12">
+                    {% if menu.template == 'footer' %}
+                        {% include 'menu/footer.twig' %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-col grid-col_12of12">
+                    <span class="copyright">{{ copyright|raw }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
