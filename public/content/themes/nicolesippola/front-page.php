@@ -6,10 +6,10 @@
  * @since 1.0
  */
 
-get_header(); ?>
+use NiSi\Frontpage\Controller;
+use NiSi\Vendor\Twig\Template;
 
-    <div class="logo-container">
-        <div class="logo"></div>
-    </div>
-
-<?php get_footer();
+get_header();
+$template = new Template(new Controller());
+$template->render();
+get_footer();
