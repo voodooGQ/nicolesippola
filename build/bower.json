@@ -3,7 +3,8 @@
   "version": "1.0",
   "private": true,
   "dependencies": {
-    "twig": "twig.js#0.7.1"
+    "twig": "twig.js#0.7.1",
+    "components-font-awesome": "^4.7.0"
   },
   "devDependencies": {}
 }
