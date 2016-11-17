@@ -52,7 +52,7 @@ class Controller implements TwigInterface
 
         if ($post) {
             $meta = new Meta($post->ID);
-            $twigData['logo'] = get_template_directory_uri() . 'assets/media/images/logo.png';
+            $twigData['logo'] = $meta->getLogoUrl();
         }
         return $twigData;
     }

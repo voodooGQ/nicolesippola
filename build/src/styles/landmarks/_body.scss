@@ -1,3 +1,6 @@
 .site-bd {
-  padding: 80px 0 $DESKTOP_FOOTER_HEIGHT 0;
+  padding: 30px 0 $DESKTOP_FOOTER_HEIGHT 0;
+  @include breakpoint(LG) {
+    padding-top: 80px;
+  }
 }

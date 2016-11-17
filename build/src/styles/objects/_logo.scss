@@ -23,3 +23,16 @@
     text-align: center;
   }
 }
+
+.logo-small {
+  img {
+    margin: 30px auto 0 auto;
+    text-align: center;
+  }
+}
+
+.home {
+  .logo-small {
+    display: none;
+  }
+}
