@@ -2,12 +2,16 @@
   font-family: $FONT_ACCENT;
   color: $COLOR_OFF_WHITE;
   background: $COLOR_ORANGE;
-  height: $FOOTER_HEIGHT;   /* Height of the footer */
+  height: $MOBILE_FOOTER_HEIGHT;
   width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
+
+  @include breakpoint(MD) {
+    height: $DESKTOP_FOOTER_HEIGHT;   /* Height of the footer */
+  }
 }
 
 .site-footer_top {
@@ -16,6 +20,10 @@
   border-top: 1px solid $COLOR_ORANGE;
   min-height: 115px;
   padding: 20px 10px;
+  text-align: center;
+  @include breakpoint(MD) {
+    text-align: left;
+  }
 }
 
 .site-footer_bottom {
@@ -34,10 +42,15 @@
     text-align: center;
 
     > li {
-      float: left;
+      display: inline-block;
       a {
         color: $COLOR_OFF_WHITE;
-        padding: 0 10px;
+        padding: 0 15px;
+        display: inline;
+        text-decoration: none;
+        &:hover {
+          color: $COLOR_GREEN;
+        }
       }
     }
   }
