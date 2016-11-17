@@ -56,6 +56,12 @@ class Footer implements TwigInterface
             $twigData['address'] = $meta->getAddress();
             $twigData['copyright'] = $meta->getCopyright();
             $twigData['menu'] = $meta->getMenu();
+            $twigData['social'] = array(
+                'facebook' => get_field('facebook', 'option'),
+                'twitter'  => get_field('twitter', 'option'),
+                'instagram' => get_field('instagram', 'option'),
+                'email'     => get_field('email', 'option')
+            );
         }
         return $twigData;
     }

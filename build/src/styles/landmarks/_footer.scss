@@ -2,16 +2,12 @@
   font-family: $FONT_ACCENT;
   color: $COLOR_OFF_WHITE;
   background: $COLOR_ORANGE;
-  height: $MOBILE_FOOTER_HEIGHT;
+  height: $DESKTOP_FOOTER_HEIGHT;
   width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-
-  @include breakpoint(MD) {
-    height: $DESKTOP_FOOTER_HEIGHT;   /* Height of the footer */
-  }
 }
 
 .site-footer_top {
@@ -53,5 +49,19 @@
         }
       }
     }
+  }
+}
+
+.social {
+  margin-top: -20px;
+
+  > li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  @include breakpoint(MD) {
+    float: right;
+    margin-top: 15px;
   }
 }

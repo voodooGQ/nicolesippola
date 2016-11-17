@@ -6,7 +6,36 @@
                     {{ address|raw }}
                 </div>
                 <div class="grid-col grid-col_6of12">
-                    <i class="icon icon-facebook"></i>
+                    <ul class="social">
+                        {% if social.facebook %}
+                            <li>
+                                <a href="{{ social.facebook|raw }}">
+                                    <i class="icon icon-facebook"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if social.twitter %}
+                            <li>
+                                <a href="{{ social.twitter|raw }}">
+                                    <i class="icon icon-twitter"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if social.instagram %}
+                            <li>
+                                <a href="{{ social.instagram|raw }}">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if social.email %}
+                            <li>
+                                <a href="{{ social.email|raw }}">
+                                    <i class="icon icon-email"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
                 </div>
             </div>
         </div>
