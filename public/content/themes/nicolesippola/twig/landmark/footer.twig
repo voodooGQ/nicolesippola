@@ -1,12 +1,27 @@
 <footer class="site-footer">
     <div class="site-footer_top">
         <div class="container">
-            Test
+            <div class="grid">
+                <div class="grid-col grid-col_6of12">
+                    {{ address|raw }}
+                </div>
+            </div>
         </div>
     </div>
     <div class="site-footer_bottom">
         <div class="container">
-            Test
+            <div class="grid">
+                <div class="grid-col grid-col_12of12">
+                    {% if menu.template == 'footer' %}
+                        {% include 'menu/footer.twig' %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-col grid-col_12of12">
+                    <span class="copyright">{{ copyright|raw }}</span>
+                </div>
+            </div>
         </div>
     </div>
 </footer>

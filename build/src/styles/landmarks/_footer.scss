@@ -1,4 +1,5 @@
 .site-footer {
+  font-family: $FONT_ACCENT;
   color: $COLOR_OFF_WHITE;
   background: $COLOR_ORANGE;
   height: $FOOTER_HEIGHT;   /* Height of the footer */
@@ -7,12 +8,37 @@
   right: 0;
   bottom: 0;
   left: 0;
-  text-align: center;
 }
 
 .site-footer_top {
   color: $COLOR_ORANGE;
   background: $COLOR_OFF_WHITE;
   border-top: 1px solid $COLOR_ORANGE;
-  height: 115px;
+  min-height: 115px;
+  padding: 20px 10px;
+}
+
+.site-footer_bottom {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+.menu-footer-container {
+  .menu-footer {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+
+    > li {
+      float: left;
+      a {
+        color: $COLOR_OFF_WHITE;
+        padding: 0 10px;
+      }
+    }
+  }
 }

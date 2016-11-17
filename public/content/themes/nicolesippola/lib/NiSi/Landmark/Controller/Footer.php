@@ -53,6 +53,9 @@ class Footer implements TwigInterface
 
         if ($post) {
             $meta = new Meta($post->ID);
+            $twigData['address'] = $meta->getAddress();
+            $twigData['copyright'] = $meta->getCopyright();
+            $twigData['menu'] = $meta->getMenu();
         }
         return $twigData;
     }
