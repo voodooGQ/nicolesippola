@@ -16,7 +16,7 @@ use NiSi\Service\Controller\Single;
  * Class Archive
  *
  * @package NiSi\Service\Meta
- * @author  Shane Smith <ssmith@nerdery.com>
+ * @author  Shane Smith <voodoogq@gmail.com>
  * @since   1.0.1
  */
 class Archive extends MetaParent

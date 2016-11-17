@@ -50,6 +50,7 @@ class Setup
     {
         return $this->registerCustomPostTypes()
             ->registerSupportFeatures()
+            ->registerOptionsPage()
             ->registerNavigationMenus()
             ->registerImageSizes();
     }
@@ -104,12 +105,27 @@ class Setup
      * Register the Custom Post Types with WordPress
      *
      * @return $this
-     * @since 1.0.0
+     * @since 1.0
      * @chainable
      */
     protected function registerCustomPostTypes()
     {
         ServiceRegister::getInstance();
+        return $this;
+    }
+
+    /**
+     * Register the ACF Options Page
+     *
+     * @return $this
+     * @since 1.0
+     * @chainable
+     */
+    protected function registerOptionsPage()
+    {
+        if(function_exists('acf_add_options_page')) {
+            acf_add_options_page();
+        }
         return $this;
     }
 

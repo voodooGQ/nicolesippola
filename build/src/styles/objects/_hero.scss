@@ -7,8 +7,8 @@
     border-bottom: 1px solid $COLOR_GREEN;
     width: 100%;
     @include breakpoint(LG) {
-      border-left: 1px solid $COLOR_GREEN;
-      border-right: 1px solid $COLOR_GREEN;
+      border: 1px solid $COLOR_GREEN;
+      border-radius: 5px;
     }
   }
 }

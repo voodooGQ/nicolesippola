@@ -1,12 +1,18 @@
 .site-footer {
   color: $COLOR_OFF_WHITE;
-  background: $COLOR_GREEN;
+  background: $COLOR_ORANGE;
   height: $FOOTER_HEIGHT;   /* Height of the footer */
   width: 100%;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
   text-align: center;
+}
+
+.site-footer_top {
+  color: $COLOR_ORANGE;
+  background: $COLOR_OFF_WHITE;
+  border-top: 1px solid $COLOR_ORANGE;
+  height: 115px;
 }

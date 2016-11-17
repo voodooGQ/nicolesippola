@@ -2,7 +2,7 @@
 /**
  * Header Meta
  *
- * @author Shane Smith <ssmith@nerdery.com>
+ * @author Shane Smith <voodoogq@gmail.com>
  * @since 1.0
  */
 
@@ -15,7 +15,7 @@ use NiSi\Theme\MetaParent;
  * Class Header
  *
  * @package NiSi\Post\Meta\Site
- * @author  Shane Smith <ssmith@nerdery.com>
+ * @author  Shane Smith <voodoogq@gmail.com>
  * @since   1.0.0
  */
 class Header extends MetaParent {

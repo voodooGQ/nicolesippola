@@ -24,6 +24,10 @@
     {
       "type": "composer",
       "url" : "https://packagist.org"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/strickdj/acf-field-address"
     }
   ],
   "require": {
@@ -39,8 +43,7 @@
     "wpackagist-plugin/log-deprecated-notices": "@dev",
     "wpackagist-plugin/log-viewer": "@dev",
     "wpackagist-plugin/ajax-thumbnail-rebuild": "@dev",
-    "wpackagist-plugin/rewrite-rules-inspector": "@dev",
-    "wpackagist-plugin/advanced-custom-fields": "@dev"
+    "wpackagist-plugin/rewrite-rules-inspector": "@dev"
   },
   "extra": {
     "webroot-dir": "../",
