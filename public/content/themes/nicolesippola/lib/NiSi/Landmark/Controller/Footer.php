@@ -60,7 +60,7 @@ class Footer implements TwigInterface
                 'facebook' => get_field('facebook', 'option'),
                 'twitter'  => get_field('twitter', 'option'),
                 'instagram' => get_field('instagram', 'option'),
-                'email'     => get_field('email', 'option')
+                'email'     => 'mailto:' . get_field('email', 'option')
             );
         }
         return $twigData;
