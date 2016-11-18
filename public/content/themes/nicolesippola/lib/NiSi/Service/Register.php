@@ -36,7 +36,7 @@ class Register extends PostParent
     public function __construct()
     {
         $this->singularName = 'Service';
-        $this->pluralName = 'Service';
+        $this->pluralName = 'Services';
         $this->menuIcon = 'dashicons-businessman';
         $this->supports = array('title', 'editor', 'thumbnail');
         parent::__construct();

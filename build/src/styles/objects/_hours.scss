@@ -1,0 +1,33 @@
+.hours {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  border: 1px solid $COLOR_GREEN;
+  font-family: $FONT_ACCENT;
+
+  li {
+    padding: 10px;
+    @include clearfix();
+  }
+
+  li:nth-child(even) {
+    background: $COLOR_GREEN;
+  }
+
+  li:nth-child(odd) {
+    background: $COLOR_OFF_WHITE;
+  }
+
+  .day {
+    float: left;
+    display: block;
+    width: 35%;
+    font-weight: bold;
+  }
+
+  .hour {
+    display: block;
+    width: 65%;
+    float: left;
+  }
+}
