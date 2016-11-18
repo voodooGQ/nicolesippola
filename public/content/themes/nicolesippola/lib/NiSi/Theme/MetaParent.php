@@ -107,7 +107,7 @@ class MetaParent
     {
         $this->post_title = get_the_title($this->postID);
         $this->permalink = get_permalink($this->postID);
-        $this->post_content = get_post_field('post_content', $this->postID);
+        $this->post_content = do_shortcode(get_post_field('post_content', $this->postID));
         $this->post_type = get_post_type($this->postID);
         $this->featured_image_id = get_post_thumbnail_id($this->postID);
         return $this;

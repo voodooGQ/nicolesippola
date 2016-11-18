@@ -132,6 +132,8 @@ proto.disable = function() {
     this.isEnabled = false;
 
     this.$trigger.off('click', this.onClickHandler);
+
+    return this;
 };
 
 /**
