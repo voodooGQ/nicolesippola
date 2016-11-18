@@ -1,5 +1,19 @@
-<div class="logo-container">
+<div class="logo-container vr">
     <div class="logo">
         <img src="{{ logo }}" />
     </div>
+</div>
+<div class="u-mobile">
+    <ul class="carousel">
+        {% for image in carousel.mobile %}
+            <li><img src="{{ image }}" /></li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="u-tabletPlus">
+    <ul class="carousel">
+        {% for image in carousel.desktop %}
+            <li><img src="{{ image }}" /></li>
+        {% endfor %}
+    </ul>
 </div>

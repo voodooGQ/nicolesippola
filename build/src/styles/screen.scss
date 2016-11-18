@@ -14,6 +14,7 @@
 @import 'objects/block';
 @import 'objects/box';
 @import 'objects/btn';
+@import 'objects/carousel';
 @import 'objects/container';
 @import 'objects/form';
 @import 'objects/grid';
@@ -29,3 +30,4 @@
 @import 'objects/utility';
 
 @import '../vendor/components-font-awesome/scss/font-awesome';
+@import '../vendor/slick-carousel/slick/slick.scss';

@@ -1,0 +1,10 @@
+.carousel {
+  img {
+    width: 100%;
+    border-right: 1px solid $COLOR_GREEN;
+    border-left: 1px solid $COLOR_GREEN;
+    @include breakpoint(LG) {
+      border: 1px solid $COLOR_GREEN;
+    }
+  }
+}

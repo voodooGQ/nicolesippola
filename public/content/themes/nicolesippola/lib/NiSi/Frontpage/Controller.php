@@ -53,6 +53,7 @@ class Controller implements TwigInterface
         if ($post) {
             $meta = new Meta($post->ID);
             $twigData['logo'] = $meta->getLogoUrl();
+            $twigData['carousel'] = $meta->getCarouselImages();
         }
         return $twigData;
     }
