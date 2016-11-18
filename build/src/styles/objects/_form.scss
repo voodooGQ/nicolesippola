@@ -1,0 +1,16 @@
+input, textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid $COLOR_GREEN;
+  background: lighten($COLOR_OFF_WHITE, 3%);
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  resize: none;
+}

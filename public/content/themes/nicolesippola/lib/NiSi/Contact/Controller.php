@@ -1,14 +1,15 @@
 <?php
 /**
- * Site Frontpage Controller
+ * Site Contact Template Controller
  *
  * @author Shane Smith <voodoogq@gmail.com>
  * @since 1.0
  */
 
-namespace NiSi\Frontpage;
+namespace NiSi\Contact;
 
 use NiSi\Vendor\Twig\TwigInterface;
+use NiSi\Theme\Image;
 
 /**
  * Class Footer
@@ -26,7 +27,7 @@ class Controller implements TwigInterface
      * @type string
      * @since 1.0
      */
-    const TWIG_TEMPLATE_NAME = 'template/frontpage.twig';
+    const TWIG_TEMPLATE_NAME = 'template/contact.twig';
 
     /**
      * Returns the name of the Twig Template to use
@@ -52,7 +53,12 @@ class Controller implements TwigInterface
 
         if ($post) {
             $meta = new Meta($post->ID);
-            $twigData['logo'] = $meta->getLogoUrl();
+            $imageMeta = Image::getImageMeta(get_post_thumbnail_id($post->ID));
+
+            $twigData['title']                      = $meta->getPostTitle();
+            $twigData['featured_image_src']         = $imageMeta['urls']['hero'];
+            $twigData['featured_image_src_mobile']  = $imageMeta['urls']['hero_mobile'];
+            $twigData['content']                    = $meta->getPostContent();
         }
         return $twigData;
     }

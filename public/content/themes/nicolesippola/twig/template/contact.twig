@@ -1,0 +1,13 @@
+{% if featured_image_src and featured_image_src_mobile %}
+    <div class="hero vr_half">
+        <img class="u-tabletPlus" src="{{ featured_image_src }}" />
+        <img class="u-mobile" src="{{ featured_image_src_mobile }}" />
+    </div>
+{% endif %}
+<div class="box">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.909491797724!2d-92.10533518437774!3d46.78638777913876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ae529618b3129b%3A0x48ff05a4eaa074aa!2s205+W+2nd+St%2C+Duluth%2C+MN+55802!5e0!3m2!1sen!2sus!4v1479432749277" frameborder="0" style="border:0" allowfullscreen class="map vr"></iframe>
+    <h1 class="hdg hdg_1 vr">{{ title|raw }}</h1>
+    <div class="userContent vr">
+        {{ content|raw }}
+    </div>
+</div>
