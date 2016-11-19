@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dea219a80d6ae635065b6e9063a08fb2",
+    "hash": "18e052aa6c14ed730eb24b03a243c33f",
+    "content-hash": "933f44f21490d1a62a4651bdc3405c24",
     "packages": [
         {
             "name": "composer/installers",
@@ -111,7 +112,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13T20:53:52+00:00"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -119,12 +120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "6e3c7450558f4258c2465dfe0da0d304d0002a44"
+                "reference": "5a0088397ac87393bcf9d5c0c2ebc00435caf411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/6e3c7450558f4258c2465dfe0da0d304d0002a44",
-                "reference": "6e3c7450558f4258c2465dfe0da0d304d0002a44",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/5a0088397ac87393bcf9d5c0c2ebc00435caf411",
+                "reference": "5a0088397ac87393bcf9d5c0c2ebc00435caf411",
                 "shasum": ""
             },
             "require": {
@@ -149,7 +150,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2016-11-17T18:31:43+00:00"
+            "time": "2016-11-19 11:16:45"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -197,7 +198,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-06-11T15:15:30+00:00"
+            "time": "2015-06-11 15:15:30"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -256,7 +257,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-11-14T01:06:16+00:00"
+            "time": "2016-11-14 01:06:16"
         },
         {
             "name": "twig/twig",
@@ -318,7 +319,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-11-15T22:03:21+00:00"
+            "time": "2016-11-15 22:03:21"
         },
         {
             "name": "wpackagist-plugin/contact-form-7",
@@ -339,7 +340,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/",
-            "time": "2016-11-15T19:06:38+00:00"
+            "time": "2016-11-15 19:06:38"
         }
     ],
     "packages-dev": [
@@ -362,7 +363,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ajax-thumbnail-rebuild/",
-            "time": "2014-05-04T08:45:49+00:00"
+            "time": "2014-05-04 08:45:49"
         },
         {
             "name": "wpackagist-plugin/debug-bar",
@@ -383,7 +384,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/debug-bar/",
-            "time": "2016-06-26T16:06:43+00:00"
+            "time": "2016-06-26 16:06:43"
         },
         {
             "name": "wpackagist-plugin/debug-bar-console",
@@ -404,7 +405,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/debug-bar-console/",
-            "time": "2012-08-07T20:42:00+00:00"
+            "time": "2012-08-07 20:42:00"
         },
         {
             "name": "wpackagist-plugin/debug-bar-cron",
@@ -425,7 +426,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/debug-bar-cron/",
-            "time": "2013-12-28T20:36:13+00:00"
+            "time": "2013-12-28 20:36:13"
         },
         {
             "name": "wpackagist-plugin/developer",
@@ -446,7 +447,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/developer/",
-            "time": "2016-04-14T10:33:03+00:00"
+            "time": "2016-04-14 10:33:03"
         },
         {
             "name": "wpackagist-plugin/log-deprecated-notices",
@@ -467,7 +468,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/log-deprecated-notices/",
-            "time": "2016-04-28T06:05:49+00:00"
+            "time": "2016-04-28 06:05:49"
         },
         {
             "name": "wpackagist-plugin/log-viewer",
@@ -488,7 +489,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/log-viewer/",
-            "time": "2014-05-04T15:00:57+00:00"
+            "time": "2014-05-04 15:00:57"
         },
         {
             "name": "wpackagist-plugin/rewrite-rules-inspector",
@@ -509,7 +510,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/rewrite-rules-inspector/",
-            "time": "2013-09-24T16:23:25+00:00"
+            "time": "2013-09-24 16:23:25"
         }
     ],
     "aliases": [],
@@ -530,7 +531,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.0.0"
+        "php": ">=5.6"
     },
     "platform-dev": []
 }
