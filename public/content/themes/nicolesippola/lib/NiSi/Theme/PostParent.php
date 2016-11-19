@@ -228,7 +228,7 @@ class PostParent
      */
     public function getPostTypeSlug()
     {
-        $slug = THEME_SETTINGS['handle'] . '_';
+        $slug = THEME_HANDLE . '_';
         $slug .= str_replace(' ', '_', strtolower($this->pluralName));
         return strlen($slug) > 20 ? substr($slug, 0, 20) : $slug;
     }

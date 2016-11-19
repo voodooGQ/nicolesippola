@@ -180,7 +180,7 @@ class Setup
      */
     protected function registerNavigationMenus()
     {
-        $themeHandle = THEME_SETTINGS['handle'];
+        $themeHandle = THEME_HANDLE;
 
         register_nav_menus(
             array(
@@ -235,8 +235,8 @@ class Setup
      */
     public function enqueueStyles()
     {
-        $themeHandle = THEME_SETTINGS['handle'];
-        $themeVersion = THEME_SETTINGS['version'];
+        $themeHandle = THEME_HANDLE;
+        $themeVersion = THEME_VERSION;
         $stylesFolder = get_template_directory_uri() . '/assets/styles/';
         $fileType = self::isProd() ? '.min.css' : '.css';
 
@@ -261,8 +261,8 @@ class Setup
      */
     public function enqueueScripts()
     {
-        $themeHandle = THEME_SETTINGS['handle'];
-        $themeVersion = THEME_SETTINGS['version'];
+        $themeHandle = THEME_HANDLE;
+        $themeVersion = THEME_VERSION;
         $scriptsFolder = get_template_directory_uri() . '/assets/scripts/';
 
         wp_register_script(
@@ -296,7 +296,7 @@ class Setup
      */
     public function isDev()
     {
-        return THEME_SETTINGS['env'] == 'dev';
+        return THEME_ENV == 'dev';
     }
 
     /**
@@ -307,6 +307,6 @@ class Setup
      */
     public function isProd()
     {
-        return THEME_SETTINGS['env'] == 'prod';
+        return THEME_ENV == 'prod';
     }
 }

@@ -1,17 +1,12 @@
 <?php
 /**
- * Theme Specific Settings
+ * Theme Settings
  */
-$theme_settings = array(
-    'handle'        => 'ns', # The handle for the theme. Used to prefix meta entries and other various parameters
-    'version'       => '1.0', # The current theme version
-    'env'           => 'dev', # The current environment 'dev' | 'prod'
-    'twig'       => array(
-        'cache'         => '.cache/twig', # The Twig cache folder
-        'templates'     => 'twig' # The Twig Templalte Folder
-    )
-);
-define('THEME_SETTINGS', serialize($theme_settings));
+define('THEME_HANDLE', 'ns');
+define('THEME_VERSION', '1.0');
+define('THEME_ENV', 'DEV');
+define('TWIG_CACHE', '.cache/twig');
+define('TWIG_TEMPLATE_DIR', 'twig');
 
 /**
  * Home & site URL.

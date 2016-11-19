@@ -54,6 +54,8 @@ class Controller implements TwigInterface
             $meta = new Meta($post->ID);
             $twigData['logo'] = $meta->getLogoUrl();
             $twigData['carousel'] = $meta->getCarouselImages();
+            $twigData['pages'] = $meta->getPageLinks();
+
         }
         return $twigData;
     }

@@ -51,4 +51,26 @@ class Meta extends MetaParent {
         }
         return $images;
     }
+
+    public function getPageLinks()
+    {
+        $pages = array();
+
+        if(have_rows('page_links')) {
+            while(have_rows('page_links')) {
+                the_row();
+                $postID = get_sub_field('page_link')[0];
+                $imageMeta = Image::getImageMeta(get_post_thumbnail_id($postID));
+
+                $page = array(
+                    'permalink'             => get_permalink($postID),
+                    'title'                 => get_the_title($postID),
+                    'featured_image_src_square' => $imageMeta['urls']['square'],
+                );
+
+                array_push($pages, $page);
+            }
+        }
+        return $pages;
+    }
 }

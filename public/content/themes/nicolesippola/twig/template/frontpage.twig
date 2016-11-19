@@ -3,17 +3,27 @@
         <img src="{{ logo }}" />
     </div>
 </div>
-<div class="u-mobile">
+<div class="u-mobile vr">
     <ul class="carousel">
         {% for image in carousel.mobile %}
             <li><img src="{{ image }}" /></li>
         {% endfor %}
     </ul>
 </div>
-<div class="u-tabletPlus">
+<div class="u-tabletPlus vr">
     <ul class="carousel">
         {% for image in carousel.desktop %}
             <li><img src="{{ image }}" /></li>
         {% endfor %}
     </ul>
 </div>
+<ul class="blocks blocks_3up">
+    {% for page in pages %}
+        <li class="serviceBlock">
+            <a href="{{ page.permalink }}">
+                <img src="{{ page.featured_image_src_square }}" />
+            </a>
+            <a class="serviceBlock-title" href="{{ page.permalink }}">{{ page.title|raw }}</a>
+        </li>
+    {% endfor %}
+</ul>
