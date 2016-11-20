@@ -1,0 +1,25 @@
+.cta {
+  background: $COLOR_GREEN;
+  background-image: url('../media/images/cta_pattern_green.png');
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $COLOR_OFF_WHITE;
+  font-size: 25px;
+  font-family: $FONT_ACCENT;
+  text-shadow: -1px 0 $COLOR_GREEN, 0 1px $COLOR_GREEN, 1px 0 $COLOR_GREEN, 0 -1px $COLOR_GREEN;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  img {
+    border: 1px solid $COLOR_OFF_WHITE;
+    border-radius: 5px 5px 0 0;
+    -webkit-filter: grayscale(1);
+    width: 100%;
+  }
+}

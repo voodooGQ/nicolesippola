@@ -1,3 +1,10 @@
 .box {
   padding: 20px;
 }
+
+.box-mobile {
+  padding: 0 10px;
+  @include breakpoint(LG) {
+    padding: 0;
+  }
+}

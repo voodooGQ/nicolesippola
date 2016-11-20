@@ -222,6 +222,13 @@ class Setup
             true
         );
 
+        add_image_size(
+            'cta',
+            '600',
+            '400',
+            true
+        );
+
         return $this;
     }
 

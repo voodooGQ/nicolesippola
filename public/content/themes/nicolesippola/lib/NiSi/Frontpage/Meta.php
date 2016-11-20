@@ -63,9 +63,9 @@ class Meta extends MetaParent {
                 $imageMeta = Image::getImageMeta(get_post_thumbnail_id($postID));
 
                 $page = array(
-                    'permalink'             => get_permalink($postID),
-                    'title'                 => get_the_title($postID),
-                    'featured_image_src_square' => $imageMeta['urls']['square'],
+                    'permalink'                 => get_permalink($postID),
+                    'title'                     => get_the_title($postID),
+                    'featured_image_src_cta' => $imageMeta['urls']['cta'],
                 );
 
                 array_push($pages, $page);

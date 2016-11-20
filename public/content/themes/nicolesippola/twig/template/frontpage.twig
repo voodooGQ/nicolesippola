@@ -17,13 +17,18 @@
         {% endfor %}
     </ul>
 </div>
-<ul class="blocks blocks_3up">
-    {% for page in pages %}
-        <li class="serviceBlock">
-            <a href="{{ page.permalink }}">
-                <img src="{{ page.featured_image_src_square }}" />
-            </a>
-            <a class="serviceBlock-title" href="{{ page.permalink }}">{{ page.title|raw }}</a>
-        </li>
-    {% endfor %}
-</ul>
+<div class="box-mobile">
+    <div class="teaser vr">
+        {{ content }}
+    </div>
+    <ul class="blocks blocks_3up">
+        {% for page in pages %}
+            <li>
+                <a href="{{ page.permalink }}" class="cta">
+                    <img src="{{ page.featured_image_src_cta }}" class="vr"/>
+                    <span>{{ page.title|raw }}</span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
