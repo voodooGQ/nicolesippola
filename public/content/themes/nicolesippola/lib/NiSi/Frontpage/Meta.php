@@ -65,7 +65,7 @@ class Meta extends MetaParent {
                 $page = array(
                     'permalink'                 => get_permalink($postID),
                     'title'                     => get_the_title($postID),
-                    'featured_image_src_cta' => $imageMeta['urls']['cta'],
+                    'featured_image_src_cta'    => $imageMeta['urls']['cta'],
                 );
 
                 array_push($pages, $page);

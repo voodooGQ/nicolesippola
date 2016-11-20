@@ -98,6 +98,7 @@ class Setup
     protected function filters()
     {
         add_filter('image_resize_dimensions', array(new Image(), 'thumbnailUpscale'), 10, 6);
+        add_filter('wp_title', array(&$this, 'wpTitle'), 10, 2);
         return $this;
     }
 
@@ -315,5 +316,31 @@ class Setup
     public function isProd()
     {
         return THEME_ENV == 'prod';
+    }
+
+    /**
+     * Filters wp_title to print a neat <title> tag based on what is being viewed.
+     *
+     * @param string $title Default title text for current view.
+     * @param string $sep   Optional separator.
+     * @return string The filtered title.
+     * @since 1.0.0
+     */
+    public static function wpTitle($title, $sep = ' - ')
+    {
+        global $page, $paged;
+
+        if (!is_front_page()) {
+            $sep = ' - ';
+        }
+
+        if (is_feed()) {
+            return $title;
+        }
+
+        // Add the blog name
+        $title .= $sep . get_bloginfo('name', 'display');
+
+        return $title;
     }
 }
