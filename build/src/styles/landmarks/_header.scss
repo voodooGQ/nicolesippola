@@ -19,6 +19,7 @@
   height: 100%;
   width: 300px;
   background: $COLOR_GREEN;
+  background-image: url('../media/images/cta_pattern_green.png');
   padding-top: 10px;
 
   > li {
@@ -26,9 +27,11 @@
       padding: 10px 25px;
       display: block;
       color: $COLOR_OFF_WHITE;
+      font-size: 25px;
+
       &:hover {
-        color: $COLOR_ORANGE;
         text-decoration: none;
+        color: $COLOR_TEXT;
       }
     }
   }
@@ -83,6 +86,10 @@
       > a {
         display: inline;
         color: $COLOR_TEXT;
+        font-size: inherit;
+        &:hover {
+          color: $COLOR_ORANGE;
+        }
       }
 
       &:not(:last-child) {
