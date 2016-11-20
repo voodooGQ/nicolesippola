@@ -37,6 +37,9 @@
         <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $faviconFolder; ?>/favicon-16x16.png">
         <link rel="manifest" href="<?php echo $faviconFolder; ?>/manifest.json">
 
+        <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/assets/media/images/logo.png" />
+        <meta property="og:title" content="<?php wp_title(); ?>" />
+
         <!-- SEO -->
         <title>
             <?php wp_title(); ?>
