@@ -52,7 +52,8 @@ class Setup
             ->registerSupportFeatures()
             ->registerOptionsPage()
             ->registerNavigationMenus()
-            ->registerImageSizes();
+            ->registerImageSizes()
+            ->registerAdminConfiguration();
     }
 
     /**
@@ -196,7 +197,7 @@ class Setup
      * Register custom image sizes with the theme
      *
      * @return $this
-     * @since 1.0.0
+     * @since 1.0
      * @chainable
      */
     protected function registerImageSizes()
@@ -233,6 +234,18 @@ class Setup
         return $this;
     }
 
+    /**
+     * Registers the admin configuration at setup
+     *
+     * @return $this
+     * @since 1.0
+     * @chainable
+     */
+    protected function registerAdminConfiguration()
+    {
+        new Admin();
+        return $this;
+    }
 
     /**
      * Enqueue CSS Stylesheets
@@ -246,11 +259,10 @@ class Setup
         $themeHandle = THEME_HANDLE;
         $themeVersion = THEME_VERSION;
         $stylesFolder = get_template_directory_uri() . '/assets/styles/';
-        $fileType = self::isProd() ? '.min.css' : '.css';
 
         wp_register_style(
             $themeHandle . '_screen',
-            $stylesFolder .  'screen' . $fileType,
+            $stylesFolder .  'screen.css',
             array(),
             $themeVersion,
             'screen, projection'
@@ -297,34 +309,12 @@ class Setup
     }
 
     /**
-     * Are we running in the Development environment?
-     *
-     * @return bool
-     * @since 1.0
-     */
-    public function isDev()
-    {
-        return THEME_ENV == 'dev';
-    }
-
-    /**
-     * Are we running in the Production environment?
-     *
-     * @return bool
-     * @since 1.0
-     */
-    public function isProd()
-    {
-        return THEME_ENV == 'prod';
-    }
-
-    /**
      * Filters wp_title to print a neat <title> tag based on what is being viewed.
      *
      * @param string $title Default title text for current view.
      * @param string $sep   Optional separator.
      * @return string The filtered title.
-     * @since 1.0.0
+     * @since 1.0
      */
     public static function wpTitle($title, $sep = ' - ')
     {
