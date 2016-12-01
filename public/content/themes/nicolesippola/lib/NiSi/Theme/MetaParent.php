@@ -191,7 +191,7 @@ class MetaParent
      */
     public function getPostContent()
     {
-        return $this->post_content;
+        return wpautop($this->post_content);
     }
 
     /**
