@@ -18,4 +18,9 @@ use NiSi\Theme\MetaParent;
  * @author  Shane Smith <voodoogq@gmail.com>
  * @since   1.0.1
  */
-class Single extends MetaParent {}
+class Single extends MetaParent {
+    public function getArchiveImageId()
+    {
+        return $this->getMeta('archive_image');
+    }
+}
