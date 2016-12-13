@@ -60,12 +60,16 @@ class Meta extends MetaParent {
             while(have_rows('page_links')) {
                 the_row();
                 $postID = get_sub_field('page_link')[0];
-                $imageMeta = Image::getImageMeta(get_post_thumbnail_id($postID));
+                if(!empty(get_field('homepage_image', $postID))) {
+                    $imageMeta = Image::getImageMeta(get_field('homepage_image', $postID));
+                } else {
+                    $imageMeta = Image::getImageMeta(get_post_thumbnail_id($postID));
+                }
 
                 $page = array(
                     'permalink'                 => get_permalink($postID),
                     'title'                     => get_the_title($postID),
-                    'featured_image_src_cta'    => $imageMeta['urls']['cta'],
+                    'homepage_image'            => $imageMeta['urls']['cta'],
                 );
 
                 array_push($pages, $page);

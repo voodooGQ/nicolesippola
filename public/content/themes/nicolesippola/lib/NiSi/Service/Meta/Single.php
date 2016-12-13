@@ -16,10 +16,15 @@ use NiSi\Theme\MetaParent;
  *
  * @package NiSi\Service\Meta
  * @author  Shane Smith <voodoogq@gmail.com>
- * @since   1.0.1
+ * @since   1.0
  */
 class Single extends MetaParent {
-    public function getArchiveImageId()
+    /**
+     * Retrieve the archive image id
+     *
+     * @return int
+     */
+    public function getArchiveImageID()
     {
         return $this->getMeta('archive_image');
     }

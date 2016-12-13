@@ -64,12 +64,18 @@ class Single implements TwigInterface
         if($id) {
             $meta = new Meta($id);
             $featuredImageMeta = Image::getImageMeta(get_post_thumbnail_id($id));
+
+            // Check to see if an archive image exists, if not assign the src to the featured
             $twigData['archive_image_id']          = $meta->getArchiveImageId();
-            $archiveImageMeta = Image::getImageMeta($twigData['archive_image_id']);
+            if($twigData['archive_image_id']) {
+                $archiveImageMeta = Image::getImageMeta($twigData['archive_image_id']);
+                $twigData['archive_image_src'] = $archiveImageMeta['urls']['square'];
+            } else {
+                $twigData['archive_image_src'] = $featuredImageMeta['urls']['square'];
+            }
 
             $twigData['featured_image_src']         = $featuredImageMeta['urls']['hero'];
             $twigData['featured_image_src_mobile']  = $featuredImageMeta['urls']['hero_mobile'];
-            $twigData['archive_image_src']          = $archiveImageMeta['urls']['square'];
             $twigData['title']                      = $meta->getPostTitle();
             $twigData['permalink']                  = $meta->getPermalink();
             $twigData['content']                    = $meta->getPostContent();
