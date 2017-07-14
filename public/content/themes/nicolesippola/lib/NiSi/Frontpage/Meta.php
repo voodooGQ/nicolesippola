@@ -59,6 +59,7 @@ class Meta extends MetaParent {
         if(have_rows('page_links')) {
             while(have_rows('page_links')) {
                 the_row();
+                $title = get_sub_field('title');
                 $postID = get_sub_field('page_link')[0];
                 if(!empty(get_field('homepage_image', $postID))) {
                     $imageMeta = Image::getImageMeta(get_field('homepage_image', $postID));
@@ -68,7 +69,9 @@ class Meta extends MetaParent {
 
                 $page = array(
                     'permalink'                 => get_permalink($postID),
-                    'title'                     => get_the_title($postID),
+                    'title'                     => empty($title)
+                        ? get_the_title($postID)
+                        : $title,
                     'homepage_image'            => $imageMeta['urls']['cta'],
                 );
 
